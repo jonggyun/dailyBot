@@ -32,3 +32,6 @@ jobs:
     - run: yarn test
       env:
         CI: true
+
+        API_KEY: ${{ secret.API_KEY }}
+        WEBHOOK_URL_SLACK: ${{ secret.WEBHOOK_URL_SLACK }}
