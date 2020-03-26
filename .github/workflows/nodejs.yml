@@ -33,5 +33,5 @@ jobs:
       env:
         CI: true
 
-        API_KEY: ${{ secret.API_KEY }}
-        WEBHOOK_URL_SLACK: ${{ secret.WEBHOOK_URL_SLACK }}
+        API_KEY: ${{ secrets.API_KEY }}
+        WEBHOOK_URL_SLACK: ${{ secrets.WEBHOOK_URL_SLACK }}
