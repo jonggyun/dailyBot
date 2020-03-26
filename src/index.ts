@@ -32,4 +32,5 @@ export const sendMessage = async () => {
 (async () => {
   console.log('⭐️ Start DailyBot.');
   await sendMessage();  
+  console.log('✅ Finished.')
 })();
