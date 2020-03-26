@@ -29,7 +29,7 @@ export const sendMessage = async () => {
   }
 };
 
-(function () {
+(async () => {
   console.log('⭐️ Start DailyBot.');
-  sendMessage();
+  await sendMessage();  
 })();
