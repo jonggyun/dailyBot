@@ -6,12 +6,15 @@
   "scripts": {
     "prettier": "prettier --write src",
     "start": "nodemon --exec 'ts-node' src/index.ts",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "test": "mocha test/**/*.ts"
   },
   "dependencies": {
+    "@types/mocha": "^7.0.2",
     "@types/node": "^12.12.31",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
+    "mocha": "^7.1.1",
     "nodemon": "^2.0.2",
     "prettier": "^2.0.2",
     "ts-node": "^8.8.1",

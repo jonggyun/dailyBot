@@ -15,7 +15,7 @@ interface ArticleProps {
   publishedAt: string;
 }
 
-const getNews = async () => {
+export const getNews = async () => {
   try {
     const { data } = await axios.get(
       `http://newsapi.org/v2/top-headlines?country=kr&apiKey=${process.env.API_KEY}`,
@@ -52,7 +52,7 @@ const getNews = async () => {
   }
 };
 
-const sendMessage = async () => {
+export const sendMessage = async () => {
   try {
     const news = await getNews();
     const date = new Date().toLocaleDateString();
